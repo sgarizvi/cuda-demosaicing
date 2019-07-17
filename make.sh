@@ -1,1 +1,1 @@
-nvcc -o demosaic -std=c++11 src/demosaicing_app.cpp src/demosaicing_cuda.cu src/main.cpp -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_videoio -lopencv_imgproc
+nvcc -o demosaic -std=c++11 -I/usr/local/include/opencv4 src/demosaicing_app.cpp src/demosaicing_cuda.cu src/main.cpp -L/usr/local/lib -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_videoio -lopencv_imgproc
